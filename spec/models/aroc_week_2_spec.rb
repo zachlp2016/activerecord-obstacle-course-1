@@ -76,7 +76,7 @@ describe 'ActiveRecord Obstacle Course, Week 2' do
     # ------------------------------------------------------------
 
     # ------------------ Using ActiveRecord ----------------------
-    items = Item.where.not(id: 4).where.not(id: 5).where.not(id: 8)
+    items = Item.where.not(id: items_not_included)
     # ------------------------------------------------------------
 
     # Expectation
